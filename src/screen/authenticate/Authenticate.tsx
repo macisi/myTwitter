@@ -25,7 +25,7 @@ const Authenticate: NavigationScreenComponent<
       console.log(event);
       // maybe there is a better method to get oauth_verifier
       if (event.url.startsWith(OAUTH_CALLBACK)) {
-        const query = (event.url as string)
+        const query: Record<string, string> = (event.url as string)
           .split('?')[1]
           .split('&')
           .reduce((prev, group) => {
@@ -34,10 +34,16 @@ const Authenticate: NavigationScreenComponent<
               [key]: value,
             });
           }, {});
-        dispatch(accessToken.request(query.oauth_verifier as string));
+        const oauthToken = props.navigation.getParam('oauthToken');
+        dispatch(
+          accessToken.request({
+            oauth_verifier: query.oauth_verifier,
+            oauth_token: oauthToken,
+          })
+        );
       }
     },
-    [dispatch]
+    [dispatch, props.navigation]
   );
 
   return (

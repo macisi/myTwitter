@@ -13,6 +13,8 @@ const initialState = {
     pending: false,
     oauth_token: '',
     oauth_token_secret: '',
+    user_id: '',
+    screen_name: '',
   },
 };
 
@@ -44,8 +46,10 @@ const authReducer = createReducer(initialState)
   .handleAction(accessToken.success, (state, { payload }) =>
     produce(state, draft => {
       draft.accessToken.pending = false;
-      draft.requestToken.oauth_token = payload.oauth_token;
-      draft.requestToken.oauth_token_secret = payload.oauth_token_secret;
+      draft.accessToken.oauth_token = payload.oauth_token;
+      draft.accessToken.oauth_token_secret = payload.oauth_token_secret;
+      draft.accessToken.user_id = payload.user_id;
+      draft.accessToken.screen_name = payload.screen_name;
     })
   )
   .handleAction(accessToken.failure, state =>

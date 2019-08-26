@@ -7,10 +7,9 @@ import { requestToken } from '@model/auth/actions';
 
 const Login: NavigationScreenComponent = props => {
   const dispatch = useDispatch();
-  const getRequestToken = useCallback(
-    () => dispatch(requestToken.request(props.navigation)),
-    [dispatch, props.navigation]
-  );
+  const getRequestToken = useCallback(() => dispatch(requestToken.request()), [
+    dispatch,
+  ]);
   const token = useSelector<RootState, string>(
     state => state.auth.requestToken.oauth_token
   );

@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useRef, useCallback } from 'react';
 import {
   createSwitchNavigator,
   createStackNavigator,
   createAppContainer,
+  NavigationContainerComponent,
 } from 'react-navigation';
 import { ThemeProvider } from 'styled-components/native';
 import { PersistGate } from 'redux-persist/integration/react';
@@ -15,6 +16,7 @@ import Authenticate from '@screen/authenticate';
 
 import { defaultTheme } from './theme/default';
 import store, { persistor } from './createStore';
+import { setTopLevelNavigator } from '@utils/navigationService';
 
 const AppStack = createStackNavigator({
   Home: HomeScreen,
@@ -37,12 +39,19 @@ const Main = createSwitchNavigator(
 
 const App = createAppContainer(Main);
 
-export default () => (
-  <Provider store={store}>
-    <PersistGate persistor={persistor}>
-      <ThemeProvider theme={defaultTheme}>
-        <App />
-      </ThemeProvider>
-    </PersistGate>
-  </Provider>
-);
+export default () => {
+  const setRef = useCallback((node: NavigationContainerComponent) => {
+    if (node) {
+      setTopLevelNavigator(node);
+    }
+  }, []);
+  return (
+    <Provider store={store}>
+      <PersistGate persistor={persistor}>
+        <ThemeProvider theme={defaultTheme}>
+          <App ref={setRef} />
+        </ThemeProvider>
+      </PersistGate>
+    </Provider>
+  );
+};
