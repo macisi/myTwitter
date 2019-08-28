@@ -13,6 +13,7 @@ module.exports = {
           '@screen': './src/screen',
           '@model': './src/model',
           '@utils': './src/utils',
+          '@components': './src/components',
         },
         extensions: ['.ts', 'tsx', '.js', '.json', '.es', '.mjs'],
       },

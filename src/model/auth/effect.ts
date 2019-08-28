@@ -24,7 +24,6 @@ function* handleRequestToken(): Generator {
 function* handleAccessToken(
   action: ReturnType<typeof accessToken.request>
 ): Generator {
-  console.log(action);
   try {
     const response: AccessToken = yield call(fetchAccessToken, action.payload);
     yield put(accessToken.success(response));

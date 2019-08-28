@@ -1,5 +1,4 @@
 import { createAsyncAction } from 'typesafe-actions';
-import { NavigationScreenProp } from 'react-navigation';
 
 export interface RequestToken {
   oauth_token: string;

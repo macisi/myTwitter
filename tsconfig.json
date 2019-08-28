@@ -45,6 +45,7 @@
       "@src/*": [ "src/*" ],
       "@screen/*": [ "src/screen/*" ],
       "@model/*": [ "src/model/*" ],
+      "@components/*": [ "src/components/*" ],
       "@utils/*": [ "src/utils/*" ]
     },
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
