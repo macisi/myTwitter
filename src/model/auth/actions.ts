@@ -6,9 +6,7 @@ export interface RequestToken {
   oauth_callback_confirmed: boolean;
 }
 
-export interface AccessToken {
-  oauth_token: string;
-  oauth_token_secret: string;
+export interface AccessToken extends OAuthToken {
   user_id: string;
   screen_name: string;
 }

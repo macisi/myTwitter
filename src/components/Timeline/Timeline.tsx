@@ -2,13 +2,20 @@
  * Timeline Component
  */
 import React from 'react';
-import { FlatList, Text } from 'react-native';
+import { FlatList } from 'react-native';
+import TweetCard from '@components/TweetCard';
+import { Tweet } from 'twitter';
 
-const Timeline = () => {
+interface TimelineProps {
+  data: Tweet[];
+}
+
+const Timeline = (props: TimelineProps) => {
   return (
     <FlatList
-      data={[{ key: 'a' }, { key: 'b' }]}
-      renderItem={({ item }) => <Text>{item.key}</Text>}
+      data={props.data}
+      keyExtractor={item => item.id_str}
+      renderItem={TweetCard}
     />
   );
 };

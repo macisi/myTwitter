@@ -4,10 +4,7 @@ import {
   generateOauthNonce,
   generateAuthorizationHeader,
 } from '@utils/helpers';
-import {
-  CONSUMER_KEY,
-  CONSUMER_SECRET,
-} from 'react-native-dotenv';
+import { CONSUMER_KEY, CONSUMER_SECRET } from 'react-native-dotenv';
 
 const instance = axios.create({
   baseURL: 'https://api.twitter.com',
@@ -21,8 +18,7 @@ instance.interceptors.response.use(
 );
 
 export const getData = <T>(
-  oauth_token: string | undefined,
-  oauth_token_secret: string | undefined,
+  oauth: Partial<OAuthToken>,
   url: string,
   extra_params: Record<string, string | number> = {}
 ) => {
@@ -34,9 +30,9 @@ export const getData = <T>(
     oauth_version: '1.0',
     ...extra_params,
   };
-  if (oauth_token) {
+  if (oauth.oauth_token) {
     Object.assign(parameters, {
-      oauth_token,
+      oauth_token: oauth.oauth_token,
     });
   }
   const oauthSignature = generateOauthSignature(
@@ -44,15 +40,13 @@ export const getData = <T>(
     `https://api.twitter.com${url}`,
     parameters,
     CONSUMER_SECRET,
-    oauth_token_secret
+    oauth.oauth_token_secret
   );
 
   const Authorization = generateAuthorizationHeader({
     ...parameters,
     oauth_signature: oauthSignature,
   });
-
-  console.log(Authorization);
 
   return instance.get<T, T>(url, {
     headers: {
@@ -63,7 +57,7 @@ export const getData = <T>(
 };
 
 export const postData = <T>(
-  oauth_token: string | null,
+  oauth: Partial<OAuthToken>,
   url: string,
   extra_params: Record<string, string | number> = {}
 ) => {
@@ -75,16 +69,17 @@ export const postData = <T>(
     oauth_version: '1.0',
     ...extra_params,
   };
-  if (oauth_token) {
+  if (oauth && oauth.oauth_token) {
     Object.assign(parameters, {
-      oauth_token,
+      oauth_token: oauth.oauth_token,
     });
   }
   const oauthSignature = generateOauthSignature(
     'POST',
     `https://api.twitter.com${url}`,
     parameters,
-    CONSUMER_SECRET
+    CONSUMER_SECRET,
+    oauth ? oauth.oauth_token_secret : ''
   );
 
   const Authorization = generateAuthorizationHeader({
@@ -97,7 +92,6 @@ export const postData = <T>(
       [key]: encodeURIComponent(extra_params[key]),
     });
   });
-  console.log(parameters, encodeExtraParams, Authorization)
 
   return instance.post<T, T>(url, encodeExtraParams, {
     headers: {

@@ -1,18 +1,14 @@
 import { getType } from 'typesafe-actions';
-import { call, put, takeLatest, select } from 'redux-saga/effects';
-import { RootState } from '@src/rootReducer';
+import { call, put, takeLatest } from 'redux-saga/effects';
+import { selectOAuthToken } from '@utils/helpers';
+import { Tweet } from 'twitter';
 import { homeTimeline } from './actions';
 import { fetchHomeTimeline } from './service';
 
-function* handleFetchTimeline(): Generator {
+function* handleFetchTimeline() {
   try {
-    const oauth = yield select<(s: RootState) => Record<string, string>>(
-      state => ({
-        oauth_token: state.auth.accessToken.oauth_token,
-        oauth_token_secret: state.auth.accessToken.oauth_token_secret,
-      })
-    );
-    const response = yield call(
+    const oauth: OAuthToken = yield call(selectOAuthToken);
+    const response: Tweet[] = yield call(
       fetchHomeTimeline,
       oauth.oauth_token,
       oauth.oauth_token_secret

@@ -2,6 +2,8 @@
  * Global Helpers Functions
  */
 import { HmacSHA1, enc } from 'crypto-js';
+import { select } from 'redux-saga/effects';
+import { RootState } from '@src/rootReducer';
 
 function encodeRFC3987(str: string | number) {
   return encodeURIComponent(str).replace(/[!'()*]/g, c => {
@@ -78,3 +80,16 @@ export const generateAuthorizationHeader = (
       .join(', ')
   );
 };
+
+/**
+ * select oauth token in effect
+ */
+export function* selectOAuthToken() {
+  const res: OAuthToken = yield select<(state: RootState) => OAuthToken>(
+    state => ({
+      oauth_token: state.auth.accessToken.oauth_token,
+      oauth_token_secret: state.auth.accessToken.oauth_token_secret,
+    })
+  );
+  return res;
+}
