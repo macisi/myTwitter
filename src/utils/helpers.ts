@@ -4,6 +4,7 @@
 import { HmacSHA1, enc } from 'crypto-js';
 import { select } from 'redux-saga/effects';
 import { RootState } from '@src/rootReducer';
+import { MediaEntity, Sizes } from 'twitter-d';
 
 function encodeRFC3987(str: string | number) {
   return encodeURIComponent(str).replace(/[!'()*]/g, c => {
@@ -92,4 +93,13 @@ export function* selectOAuthToken() {
     })
   );
   return res;
+}
+
+export function getPhotoUrl(media: MediaEntity, size: keyof Sizes) {
+  const url = media.media_url_https;
+  const result = url.match(/^(.*)\.([^.]*)$/);
+  if (result) {
+    return `${result[1]}?format=${result[2]}&name=${size}`;
+  }
+  return url;
 }

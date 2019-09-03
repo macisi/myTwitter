@@ -5,9 +5,11 @@ import React from 'react';
 import { TouchableHighlight, Text, View } from 'react-native';
 import { formatRelativeWithOptions } from 'date-fns/fp';
 import { zhCN } from 'date-fns/locale';
-import { compose, ifElse, propEq, view, lensPath } from 'ramda';
+import { compose, view, lensPath } from 'ramda';
 import styled from 'styled-components/native';
 import Avatar from '@components/Avatar';
+import MediaWall from '@components/MediaWall';
+import { MediaEntity } from 'twitter-d';
 import { Tweet } from 'twitter';
 
 interface TweetCardProps {
@@ -44,12 +46,9 @@ const when = compose(
   str => new Date(str),
   view<TweetCardProps, string>(lensPath(['item', 'created_at']))
 );
-const textView = ifElse(
-  propEq('truncated', true),
-  view<TweetCardProps, string>(
-    lensPath(['item', 'extended_tweet', 'full_text'])
-  ),
-  view<TweetCardProps, string>(lensPath(['item', 'text']))
+const textView = view<TweetCardProps, string>(lensPath(['item', 'text']));
+const mediaView = view<TweetCardProps, MediaEntity[]>(
+  lensPath(['item', 'extended_entities', 'media'])
 );
 
 const TweetCard = (props: TweetCardProps) => {
@@ -72,6 +71,7 @@ const TweetCard = (props: TweetCardProps) => {
           <ContentView>
             <Text>{textView(props)}</Text>
           </ContentView>
+          <MediaWall data={mediaView(props)} />
         </CardView>
       </View>
     </TouchableHighlight>

@@ -1,4 +1,5 @@
 import React, { useCallback } from 'react';
+import { Dimensions } from 'react-native';
 import {
   createSwitchNavigator,
   createAppContainer,
@@ -17,6 +18,9 @@ import Authenticate from '@screen/authenticate';
 import { defaultTheme } from './theme/default';
 import store, { persistor } from './createStore';
 import { setTopLevelNavigator } from '@utils/navigationService';
+import dimensionContext from '@utils/dimensionContext';
+
+const DimensionProvider = dimensionContext.Provider;
 
 const AppStack = createStackNavigator({
   Home: HomeScreen,
@@ -49,7 +53,9 @@ export default () => {
     <Provider store={store}>
       <PersistGate persistor={persistor}>
         <ThemeProvider theme={defaultTheme}>
-          <App ref={setRef} />
+          <DimensionProvider value={Dimensions.get('window')}>
+            <App ref={setRef} />
+          </DimensionProvider>
         </ThemeProvider>
       </PersistGate>
     </Provider>
