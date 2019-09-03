@@ -5,7 +5,7 @@ import React from 'react';
 import { TouchableHighlight, Text, View } from 'react-native';
 import { formatRelativeWithOptions } from 'date-fns/fp';
 import { zhCN } from 'date-fns/locale';
-import { compose, view, lensPath } from 'ramda';
+import { compose, ifElse, propEq, view, lensPath } from 'ramda';
 import styled from 'styled-components/native';
 import Avatar from '@components/Avatar';
 import { Tweet } from 'twitter';
@@ -44,7 +44,13 @@ const when = compose(
   str => new Date(str),
   view<TweetCardProps, string>(lensPath(['item', 'created_at']))
 );
-const textView = view<TweetCardProps, string>(lensPath(['item', 'text']));
+const textView = ifElse(
+  propEq('truncated', true),
+  view<TweetCardProps, string>(
+    lensPath(['item', 'extended_tweet', 'full_text'])
+  ),
+  view<TweetCardProps, string>(lensPath(['item', 'text']))
+);
 
 const TweetCard = (props: TweetCardProps) => {
   const uri = avatarSourceView(props);

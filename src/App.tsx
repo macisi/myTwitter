@@ -1,10 +1,10 @@
 import React, { useCallback } from 'react';
 import {
   createSwitchNavigator,
-  createStackNavigator,
   createAppContainer,
   NavigationContainerComponent,
 } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 import { ThemeProvider } from 'styled-components/native';
 import { PersistGate } from 'redux-persist/integration/react';
 import { Provider } from 'react-redux';
