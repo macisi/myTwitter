@@ -20,7 +20,7 @@ instance.interceptors.response.use(
 export const getData = <T>(
   oauth: Partial<OAuthToken>,
   url: string,
-  extra_params: Record<string, string | number> = {}
+  extra_params: object = {}
 ) => {
   const parameters = {
     oauth_consumer_key: CONSUMER_KEY,
@@ -59,7 +59,7 @@ export const getData = <T>(
 export const postData = <T>(
   oauth: Partial<OAuthToken>,
   url: string,
-  extra_params: Record<string, string | number> = {}
+  extra_params: object = {}
 ) => {
   const parameters = {
     oauth_consumer_key: CONSUMER_KEY,

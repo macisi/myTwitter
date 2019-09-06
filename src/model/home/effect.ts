@@ -5,13 +5,14 @@ import { Tweet } from 'twitter';
 import { homeTimeline } from './actions';
 import { fetchHomeTimeline } from './service';
 
-function* handleFetchTimeline() {
+function* handleFetchTimeline(action: ReturnType<typeof homeTimeline.request>) {
   try {
     const oauth: OAuthToken = yield call(selectOAuthToken);
     const response: Tweet[] = yield call(
       fetchHomeTimeline,
       oauth.oauth_token,
-      oauth.oauth_token_secret
+      oauth.oauth_token_secret,
+      action.payload
     );
     yield put(homeTimeline.success(response));
   } catch (err) {

@@ -1,15 +1,17 @@
 import { getData } from '@utils/request';
-import { Timeline } from 'twitter';
+import { Tweet, TimelineParameters } from 'twitter';
 
 export const fetchHomeTimeline = (
   oauth_token: string,
-  oauth_token_secret: string
+  oauth_token_secret: string,
+  params: TimelineParameters
 ) => {
-  return getData<Timeline[]>(
+  return getData<Tweet[]>(
     {
       oauth_token,
       oauth_token_secret,
     },
-    '/1.1/statuses/home_timeline.json'
+    '/1.1/statuses/home_timeline.json',
+    params
   );
 };

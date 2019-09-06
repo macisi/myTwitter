@@ -17,7 +17,7 @@ const Home: NavigationScreenComponent = props => {
   );
   useEffect(() => {
     if (data.length === 0) {
-      dispatch(homeTimeline.request());
+      dispatch(homeTimeline.request({}));
     }
   }, [dispatch, data]);
 

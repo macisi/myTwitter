@@ -1,5 +1,5 @@
-import React, { useCallback } from 'react';
-import { Dimensions } from 'react-native';
+import React, { useCallback, useEffect, useState } from 'react';
+import { Dimensions, ScaledSize } from 'react-native';
 import {
   createSwitchNavigator,
   createAppContainer,
@@ -49,11 +49,26 @@ export default () => {
       setTopLevelNavigator(node);
     }
   }, []);
+  const [dimension, setDimension] = useState(Dimensions.get('window'));
+  const updateDimension = ({
+    window,
+  }: {
+    window: ScaledSize;
+    screen: ScaledSize;
+  }) => {
+    setDimension(window);
+  };
+  useEffect(() => {
+    Dimensions.addEventListener('change', updateDimension);
+    return () => {
+      Dimensions.removeEventListener('change', updateDimension);
+    };
+  }, []);
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor}>
         <ThemeProvider theme={defaultTheme}>
-          <DimensionProvider value={Dimensions.get('window')}>
+          <DimensionProvider value={dimension}>
             <App ref={setRef} />
           </DimensionProvider>
         </ThemeProvider>
