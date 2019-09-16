@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { View, Text } from 'react-native';
 import { NavigationScreenComponent } from 'react-navigation';
 import { useSelector } from 'react-redux';

@@ -8,13 +8,19 @@ import { fetchHomeTimeline } from './service';
 function* handleFetchTimeline(action: ReturnType<typeof homeTimeline.request>) {
   try {
     const oauth: OAuthToken = yield call(selectOAuthToken);
+    const { type, ...params } = action.payload;
     const response: Tweet[] = yield call(
       fetchHomeTimeline,
       oauth.oauth_token,
       oauth.oauth_token_secret,
-      action.payload
+      params
     );
-    yield put(homeTimeline.success(response));
+    yield put(
+      homeTimeline.success({
+        response,
+        type,
+      })
+    );
   } catch (err) {
     yield put(homeTimeline.failure(err));
   }

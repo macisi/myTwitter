@@ -27,6 +27,7 @@ declare module 'twitter' {
     Place,
     FullUser,
   } from 'twitter-d';
+  import { TIMELINE_REQUEST_TYPE } from '@utils/enum';
 
   interface Tweet {
     created_at: string;
@@ -69,11 +70,11 @@ declare module 'twitter' {
      * There are limits to the number of Tweets which can be accessed through the API.
      * If the limit of Tweets has occured since the since_id, the since_id will be forced to the oldest ID available.
      */
-    since_id?: number;
+    since_id?: string;
     /**
      * Returns results with an ID less than (that is, older than) or equal to the specified ID.
      */
-    max_id?: number;
+    max_id?: string;
     /**
      * When set to either true , t or 1 , each Tweet returned in a timeline will include a user object including only the status authors numerical ID.
      * Omit this parameter to receive the complete user object.
@@ -89,4 +90,8 @@ declare module 'twitter' {
      */
     include_entities?: boolean;
   }
+
+  type TIMELINE_REQUEST_PARAM<Params> = {
+    type: TIMELINE_REQUEST_TYPE;
+  } & Params;
 }

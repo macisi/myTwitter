@@ -5,16 +5,24 @@ import {
   generateAuthorizationHeader,
 } from '@utils/helpers';
 import { CONSUMER_KEY, CONSUMER_SECRET } from 'react-native-dotenv';
+import { path } from 'ramda';
+import { navigate } from '@utils/navigationService';
+
+const getStatusCode = path(['response', 'status']);
 
 const instance = axios.create({
   baseURL: 'https://api.twitter.com',
 });
 instance.interceptors.response.use(
-  res => {
-    console.log(res);
-    return res.data;
-  },
-  err => Promise.reject(err)
+  res => res.data,
+  err => {
+    const statusCode = getStatusCode(err);
+    if (statusCode === 401) {
+      // Unauthorized
+      navigate('Auth');
+    }
+    return Promise.reject(err);
+  }
 );
 
 export const getData = <T>(
@@ -49,6 +57,7 @@ export const getData = <T>(
   });
 
   return instance.get<T, T>(url, {
+    params: extra_params,
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
       Authorization,
