@@ -2,7 +2,7 @@
  * Tweet Card
  */
 import React from 'react';
-import { TouchableHighlight, Text, View } from 'react-native';
+import { TouchableHighlight, Text } from 'react-native';
 import { formatRelativeWithOptions } from 'date-fns/fp';
 import { zhCN } from 'date-fns/locale';
 import { compose, view, lensPath } from 'ramda';
@@ -11,6 +11,7 @@ import Avatar from '@components/Avatar';
 import MediaWall from '@components/MediaWall';
 import { MediaEntity } from 'twitter-d';
 import { Tweet } from 'twitter';
+import { navigate } from '@utils/navigationService';
 
 interface TweetCardProps {
   item: Tweet;
@@ -53,27 +54,30 @@ const mediaView = view<TweetCardProps, MediaEntity[]>(
 
 const TweetCard = (props: TweetCardProps) => {
   const uri = avatarSourceView(props);
+  const handlePress = () => {
+    navigate('Tweet', {
+      id: props.item.id_str,
+    });
+  };
   return (
-    <TouchableHighlight>
-      <View>
-        <CardView>
-          <Avatar
-            size={50}
-            source={{
-              uri,
-            }}
-          />
-          <TweetMeta>
-            <Text>{nameView(props)}</Text>
-            <Text>@{screenNameView(props)}</Text>
-            <Text>{when(props)}</Text>
-          </TweetMeta>
-          <ContentView>
-            <Text>{textView(props)}</Text>
-          </ContentView>
-          <MediaWall data={mediaView(props)} />
-        </CardView>
-      </View>
+    <TouchableHighlight onPress={handlePress}>
+      <CardView>
+        <Avatar
+          size={50}
+          source={{
+            uri,
+          }}
+        />
+        <TweetMeta>
+          <Text>{nameView(props)}</Text>
+          <Text>@{screenNameView(props)}</Text>
+          <Text>{when(props)}</Text>
+        </TweetMeta>
+        <ContentView>
+          <Text>{textView(props)}</Text>
+        </ContentView>
+        <MediaWall data={mediaView(props)} />
+      </CardView>
     </TouchableHighlight>
   );
 };

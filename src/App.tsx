@@ -4,16 +4,18 @@ import {
   createSwitchNavigator,
   createAppContainer,
   NavigationContainerComponent,
+  NavigationNavigator,
 } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import { ThemeProvider } from 'styled-components/native';
 import { PersistGate } from 'redux-persist/integration/react';
 import { Provider } from 'react-redux';
 
-import HomeScreen from '@screen/home';
 import LoginScreen from '@screen/login';
 import SplashScreen from '@screen/splash';
 import Authenticate from '@screen/authenticate';
+import HomeScreen from '@screen/home';
+import TweetScreen from '@screen/tweet';
 
 import { defaultTheme } from './theme/default';
 import store, { persistor } from './createStore';
@@ -24,6 +26,7 @@ const DimensionProvider = dimensionContext.Provider;
 
 const AppStack = createStackNavigator({
   Home: HomeScreen,
+  Tweet: TweetScreen,
 });
 const AuthStack = createStackNavigator({
   Login: LoginScreen,
@@ -41,7 +44,7 @@ const Main = createSwitchNavigator(
   }
 );
 
-const App = createAppContainer(Main);
+const App = createAppContainer(Main as NavigationNavigator<any, any>);
 
 export default () => {
   const setRef = useCallback((node: NavigationContainerComponent) => {

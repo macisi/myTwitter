@@ -1,9 +1,10 @@
 import { all, call, spawn } from 'redux-saga/effects';
 import authEffect from '@model/auth/effect';
 import homeEffect from '@model/home/effect';
+import tweetEffect from '@model/tweet/effect';
 
 export default function* rootSaga() {
-  const sagas = [authEffect, homeEffect];
+  const sagas = [authEffect, homeEffect, tweetEffect];
 
   yield all(
     sagas.map(saga =>

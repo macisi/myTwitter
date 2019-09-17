@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { NavigationScreenComponent } from 'react-navigation';
+import { NavigationInjectedProps } from 'react-navigation';
 import styled from '@src/styled-components';
 import Timeline from '@components/Timeline';
 import { RootState } from '@src/rootReducer';
@@ -49,7 +49,9 @@ const fetchTimelineSelector = createSelector<
   })
 );
 
-const Home: NavigationScreenComponent = props => {
+interface HomeProps extends NavigationInjectedProps<{}> {}
+
+const Home: React.SFC<HomeProps> = () => {
   const { pending, fetch, result } = useFetch(
     fetchTimelineSelector,
     homeTimeline.request
@@ -69,7 +71,6 @@ const Home: NavigationScreenComponent = props => {
       max_id: result.max_id,
     });
   }, [result.max_id, fetch]);
-  console.log('1');
 
   return (
     <HomeView>

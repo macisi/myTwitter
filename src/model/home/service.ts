@@ -5,8 +5,8 @@ export const fetchHomeTimeline = (
   oauth_token: string,
   oauth_token_secret: string,
   params: TimelineParameters
-) => {
-  return getData<Tweet[]>(
+) =>
+  getData<Tweet[]>(
     {
       oauth_token,
       oauth_token_secret,
@@ -14,4 +14,3 @@ export const fetchHomeTimeline = (
     '/1.1/statuses/home_timeline.json',
     params
   );
-};

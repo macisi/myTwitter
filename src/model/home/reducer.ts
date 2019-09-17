@@ -13,7 +13,7 @@ const initialState = {
   },
 };
 
-const mergeTimeline = compose<Tweet[], Tweet[]>(
+const mergeTimeline = compose<Tweet[], Tweet[], Tweet[], Tweet[]>(
   uniqWith(eqProps('id_str')),
   concat
 );
