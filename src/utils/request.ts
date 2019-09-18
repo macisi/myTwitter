@@ -5,10 +5,12 @@ import {
   generateAuthorizationHeader,
 } from '@utils/helpers';
 import { CONSUMER_KEY, CONSUMER_SECRET } from 'react-native-dotenv';
+import { WSnackBar } from 'react-native-smart-tip';
 import { path } from 'ramda';
 import { navigate } from '@utils/navigationService';
+import { STATUS_CODE_ENUM, STATUS_CODE_MAP } from '@utils/enum';
 
-const getStatusCode = path(['response', 'status']);
+const getStatusCode = path<number>(['response', 'status']);
 
 const instance = axios.create({
   baseURL: 'https://api.twitter.com',
@@ -17,9 +19,17 @@ instance.interceptors.response.use(
   res => res.data,
   err => {
     const statusCode = getStatusCode(err);
-    if (statusCode === 401) {
-      // Unauthorized
-      navigate('Auth');
+    if (statusCode) {
+      switch (statusCode) {
+        case STATUS_CODE_ENUM.Unauthorized:
+          navigate('Auth');
+          break;
+      }
+      // Show snackbar message
+      WSnackBar.show({
+        position: WSnackBar.position.TOP,
+        data: STATUS_CODE_MAP.get(statusCode) || `${statusCode}`,
+      });
     }
     return Promise.reject(err);
   }

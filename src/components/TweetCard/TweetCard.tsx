@@ -19,6 +19,7 @@ interface TweetCardProps {
 
 const CardView = styled.View`
   display: flex;
+  padding: 8px;
   flex-direction: row;
   flex-wrap: wrap;
 `;

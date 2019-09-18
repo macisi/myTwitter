@@ -36,11 +36,7 @@ const TweetComponent: React.SFC<TweetProps> = props => {
   const { navigation } = props;
   const tweetId = navigation.getParam('id');
   const tweetSelector = useMemo(getTweetSelector, []);
-  const { pending, fetch, result } = useFetch(
-    tweetSelector,
-    tweetId,
-    tweet.request
-  );
+  const { fetch, result } = useFetch(tweetSelector, tweetId, tweet.request);
   useEffect(() => {
     if (!result.tweet) {
       fetch({

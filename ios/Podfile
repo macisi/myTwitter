@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'myTwitter' do
-  # Pods for myTwitter
+target 'reactNativeTwitter' do
+  # Pods for reactNativeTwitter
   pod 'React', :path => '../node_modules/react-native/'
   pod 'React-Core', :path => '../node_modules/react-native/React'
   pod 'React-DevSupport', :path => '../node_modules/react-native/React'
@@ -27,9 +27,7 @@ target 'myTwitter' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-
-
-  target 'myTwitterTests' do
+  target 'reactNativeTwitterTests' do
     inherit! :search_paths
     # Pods for testing
   end
@@ -37,10 +35,10 @@ target 'myTwitter' do
   use_native_modules!
 end
 
-target 'myTwitter-tvOS' do
-  # Pods for myTwitter-tvOS
+target 'reactNativeTwitter-tvOS' do
+  # Pods for reactNativeTwitter-tvOS
 
-  target 'myTwitter-tvOSTests' do
+  target 'reactNativeTwitter-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

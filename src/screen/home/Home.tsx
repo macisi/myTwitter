@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useEffect, useCallback } from 'react';
 import { NavigationInjectedProps } from 'react-navigation';
 import styled from '@src/styled-components';
 import Timeline from '@components/Timeline';
@@ -56,7 +56,13 @@ const Home: React.SFC<HomeProps> = () => {
     fetchTimelineSelector,
     homeTimeline.request
   );
-  console.log(result);
+  useEffect(() => {
+    if (result.data.length === 0) {
+      fetch({
+        type: TIMELINE_REQUEST_TYPE.TOP,
+      });
+    }
+  }, [fetch, result]);
   const handleRefresh = useCallback(() => {
     console.log('handleRefresh', result.since_id);
     fetch({
