@@ -1,4 +1,4 @@
-package com.mytwitter;
+package com.reactnativetwitter;
 
 import android.app.Application;
 import android.util.Log;

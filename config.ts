@@ -1,4 +1,4 @@
 export default {
-  name: "react-native-twitter",
-  displayName: "react-native-twitter"
-}
+  name: 'reactNativeTwitter',
+  displayName: 'react-native-twitter',
+};

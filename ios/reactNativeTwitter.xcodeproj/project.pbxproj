@@ -7,19 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* myTwitterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* myTwitterTests.m */; };
+		00E356F31AD99517003FC87E /* reactNativeTwitterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* reactNativeTwitterTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		15D871B1A665B9838104B8CA /* libPods-myTwitterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEFF26A0ECD10C19FF90B5D /* libPods-myTwitterTests.a */; };
-		1E9372852B63DADC3B3B8411 /* libPods-myTwitter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81A4DA14DA89D8DAA508AD26 /* libPods-myTwitter.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* myTwitterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* myTwitterTests.m */; };
-		3AF6F81E30BCE81B6AE8C478 /* libPods-myTwitter-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1132BB1A5D9AB835A53337CD /* libPods-myTwitter-tvOSTests.a */; };
-		4F4E77B00A7CE4CE1954E6B2 /* libPods-myTwitter-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36EF184B10B9184FDE228BDC /* libPods-myTwitter-tvOS.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* reactNativeTwitterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* reactNativeTwitterTests.m */; };
+		5FD48B35F531E1FBE7A12EDF /* libPods-reactNativeTwitter-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F1B2E4F0D57EAE20597690 /* libPods-reactNativeTwitter-tvOS.a */; };
+		941DF6112332202900B6CEDD /* ios in Resources */ = {isa = PBXBuildFile; fileRef = 941DF6102332202900B6CEDD /* ios */; };
+		9CA53B7E6ECCFC7DE813E292 /* libPods-reactNativeTwitterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E380D2A3BE0643F92013CBC8 /* libPods-reactNativeTwitterTests.a */; };
+		C2843C58A2BD7E9C6C4EB108 /* libPods-reactNativeTwitter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F1A941AA1623AEA306F0F2 /* libPods-reactNativeTwitter.a */; };
+		ED05F27B8FD7E6D40839D1D4 /* libPods-reactNativeTwitter-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11EE5898776ADA7486CB5CFD /* libPods-reactNativeTwitter-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,43 +29,44 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = myTwitter;
+			remoteInfo = reactNativeTwitter;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "myTwitter-tvOS";
+			remoteInfo = "reactNativeTwitter-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* myTwitterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myTwitterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* reactNativeTwitterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reactNativeTwitterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* myTwitterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myTwitterTests.m; sourceTree = "<group>"; };
-		01CF223B6B6D283FA252712F /* Pods-myTwitterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTwitterTests.release.xcconfig"; path = "Target Support Files/Pods-myTwitterTests/Pods-myTwitterTests.release.xcconfig"; sourceTree = "<group>"; };
-		1132BB1A5D9AB835A53337CD /* libPods-myTwitter-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-myTwitter-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07F961A680F5B00A75B9A /* myTwitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myTwitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = myTwitter/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = myTwitter/AppDelegate.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* reactNativeTwitterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reactNativeTwitterTests.m; sourceTree = "<group>"; };
+		056C8E6798EA7B30A9E2BC23 /* Pods-reactNativeTwitterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeTwitterTests.release.xcconfig"; path = "Target Support Files/Pods-reactNativeTwitterTests/Pods-reactNativeTwitterTests.release.xcconfig"; sourceTree = "<group>"; };
+		11EE5898776ADA7486CB5CFD /* libPods-reactNativeTwitter-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNativeTwitter-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* reactNativeTwitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reactNativeTwitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = reactNativeTwitter/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = reactNativeTwitter/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = myTwitter/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = myTwitter/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = myTwitter/main.m; sourceTree = "<group>"; };
-		16FCC00312A9005A3974A1A2 /* Pods-myTwitter-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTwitter-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-myTwitter-tvOS/Pods-myTwitter-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* myTwitter-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "myTwitter-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* myTwitter-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "myTwitter-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E186B0D5E916B81D8D338D0 /* Pods-myTwitterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTwitterTests.debug.xcconfig"; path = "Target Support Files/Pods-myTwitterTests/Pods-myTwitterTests.debug.xcconfig"; sourceTree = "<group>"; };
-		308D05211211045DEA3D67F8 /* Pods-myTwitter-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTwitter-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-myTwitter-tvOSTests/Pods-myTwitter-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		36EF184B10B9184FDE228BDC /* libPods-myTwitter-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-myTwitter-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BEFF26A0ECD10C19FF90B5D /* libPods-myTwitterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-myTwitterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7655DF9E3F9F1FBF211CE9B5 /* Pods-myTwitter-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTwitter-tvOS.release.xcconfig"; path = "Target Support Files/Pods-myTwitter-tvOS/Pods-myTwitter-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		78F232FEB5AD6E9F6FFA142A /* Pods-myTwitter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTwitter.release.xcconfig"; path = "Target Support Files/Pods-myTwitter/Pods-myTwitter.release.xcconfig"; sourceTree = "<group>"; };
-		81A4DA14DA89D8DAA508AD26 /* libPods-myTwitter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-myTwitter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A085E4FD2613639779B25B9F /* Pods-myTwitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTwitter.debug.xcconfig"; path = "Target Support Files/Pods-myTwitter/Pods-myTwitter.debug.xcconfig"; sourceTree = "<group>"; };
-		C36053AE76AEF146353384A2 /* Pods-myTwitter-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myTwitter-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-myTwitter-tvOSTests/Pods-myTwitter-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = reactNativeTwitter/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = reactNativeTwitter/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = reactNativeTwitter/main.m; sourceTree = "<group>"; };
+		221EFC7F9CBC3421E9414E5C /* Pods-reactNativeTwitter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeTwitter.release.xcconfig"; path = "Target Support Files/Pods-reactNativeTwitter/Pods-reactNativeTwitter.release.xcconfig"; sourceTree = "<group>"; };
+		25D274E0D3FD744E4755382E /* Pods-reactNativeTwitter-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeTwitter-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-reactNativeTwitter-tvOSTests/Pods-reactNativeTwitter-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* reactNativeTwitter-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "reactNativeTwitter-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* reactNativeTwitter-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "reactNativeTwitter-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DFCD0845CD0D313A063D08B /* Pods-reactNativeTwitterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeTwitterTests.debug.xcconfig"; path = "Target Support Files/Pods-reactNativeTwitterTests/Pods-reactNativeTwitterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		63709619575EDE793CCC59F7 /* Pods-reactNativeTwitter-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeTwitter-tvOS.release.xcconfig"; path = "Target Support Files/Pods-reactNativeTwitter-tvOS/Pods-reactNativeTwitter-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		8C1F837875DE7BEA787087FC /* Pods-reactNativeTwitter-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeTwitter-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-reactNativeTwitter-tvOSTests/Pods-reactNativeTwitter-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		8E7B2C3E314A8054FF7443F1 /* Pods-reactNativeTwitter-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeTwitter-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-reactNativeTwitter-tvOS/Pods-reactNativeTwitter-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		913FADFCF254A5F92B2AFEE8 /* Pods-reactNativeTwitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeTwitter.debug.xcconfig"; path = "Target Support Files/Pods-reactNativeTwitter/Pods-reactNativeTwitter.debug.xcconfig"; sourceTree = "<group>"; };
+		941DF6102332202900B6CEDD /* ios */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ios; sourceTree = "<group>"; };
+		A1F1B2E4F0D57EAE20597690 /* libPods-reactNativeTwitter-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNativeTwitter-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E380D2A3BE0643F92013CBC8 /* libPods-reactNativeTwitterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNativeTwitterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4F1A941AA1623AEA306F0F2 /* libPods-reactNativeTwitter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNativeTwitter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -74,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15D871B1A665B9838104B8CA /* libPods-myTwitterTests.a in Frameworks */,
+				9CA53B7E6ECCFC7DE813E292 /* libPods-reactNativeTwitterTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E9372852B63DADC3B3B8411 /* libPods-myTwitter.a in Frameworks */,
+				C2843C58A2BD7E9C6C4EB108 /* libPods-reactNativeTwitter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F4E77B00A7CE4CE1954E6B2 /* libPods-myTwitter-tvOS.a in Frameworks */,
+				5FD48B35F531E1FBE7A12EDF /* libPods-reactNativeTwitter-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,20 +100,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AF6F81E30BCE81B6AE8C478 /* libPods-myTwitter-tvOSTests.a in Frameworks */,
+				ED05F27B8FD7E6D40839D1D4 /* libPods-reactNativeTwitter-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* myTwitterTests */ = {
+		00E356EF1AD99517003FC87E /* reactNativeTwitterTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* myTwitterTests.m */,
+				00E356F21AD99517003FC87E /* reactNativeTwitterTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = myTwitterTests;
+			path = reactNativeTwitterTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -122,7 +124,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* myTwitter */ = {
+		13B07FAE1A68108700A75B9A /* reactNativeTwitter */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -133,7 +135,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = myTwitter;
+			name = reactNativeTwitter;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -141,12 +143,27 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				81A4DA14DA89D8DAA508AD26 /* libPods-myTwitter.a */,
-				36EF184B10B9184FDE228BDC /* libPods-myTwitter-tvOS.a */,
-				1132BB1A5D9AB835A53337CD /* libPods-myTwitter-tvOSTests.a */,
-				6BEFF26A0ECD10C19FF90B5D /* libPods-myTwitterTests.a */,
+				E4F1A941AA1623AEA306F0F2 /* libPods-reactNativeTwitter.a */,
+				A1F1B2E4F0D57EAE20597690 /* libPods-reactNativeTwitter-tvOS.a */,
+				11EE5898776ADA7486CB5CFD /* libPods-reactNativeTwitter-tvOSTests.a */,
+				E380D2A3BE0643F92013CBC8 /* libPods-reactNativeTwitterTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5786ABBDA936B5F3C81D1A9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				913FADFCF254A5F92B2AFEE8 /* Pods-reactNativeTwitter.debug.xcconfig */,
+				221EFC7F9CBC3421E9414E5C /* Pods-reactNativeTwitter.release.xcconfig */,
+				8E7B2C3E314A8054FF7443F1 /* Pods-reactNativeTwitter-tvOS.debug.xcconfig */,
+				63709619575EDE793CCC59F7 /* Pods-reactNativeTwitter-tvOS.release.xcconfig */,
+				25D274E0D3FD744E4755382E /* Pods-reactNativeTwitter-tvOSTests.debug.xcconfig */,
+				8C1F837875DE7BEA787087FC /* Pods-reactNativeTwitter-tvOSTests.release.xcconfig */,
+				5DFCD0845CD0D313A063D08B /* Pods-reactNativeTwitterTests.debug.xcconfig */,
+				056C8E6798EA7B30A9E2BC23 /* Pods-reactNativeTwitterTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -159,12 +176,13 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* myTwitter */,
+				941DF6102332202900B6CEDD /* ios */,
+				13B07FAE1A68108700A75B9A /* reactNativeTwitter */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* myTwitterTests */,
+				00E356EF1AD99517003FC87E /* reactNativeTwitterTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				CEBE2E6E71A57AFE747D5552 /* Pods */,
+				5786ABBDA936B5F3C81D1A9E /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -174,37 +192,22 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* myTwitter.app */,
-				00E356EE1AD99517003FC87E /* myTwitterTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* myTwitter-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* myTwitter-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* reactNativeTwitter.app */,
+				00E356EE1AD99517003FC87E /* reactNativeTwitterTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* reactNativeTwitter-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* reactNativeTwitter-tvOSTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		CEBE2E6E71A57AFE747D5552 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A085E4FD2613639779B25B9F /* Pods-myTwitter.debug.xcconfig */,
-				78F232FEB5AD6E9F6FFA142A /* Pods-myTwitter.release.xcconfig */,
-				16FCC00312A9005A3974A1A2 /* Pods-myTwitter-tvOS.debug.xcconfig */,
-				7655DF9E3F9F1FBF211CE9B5 /* Pods-myTwitter-tvOS.release.xcconfig */,
-				C36053AE76AEF146353384A2 /* Pods-myTwitter-tvOSTests.debug.xcconfig */,
-				308D05211211045DEA3D67F8 /* Pods-myTwitter-tvOSTests.release.xcconfig */,
-				2E186B0D5E916B81D8D338D0 /* Pods-myTwitterTests.debug.xcconfig */,
-				01CF223B6B6D283FA252712F /* Pods-myTwitterTests.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* myTwitterTests */ = {
+		00E356ED1AD99517003FC87E /* reactNativeTwitterTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "myTwitterTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "reactNativeTwitterTests" */;
 			buildPhases = (
-				3F0BD0254B9402257057A40D /* [CP] Check Pods Manifest.lock */,
+				EE7300ED20B008C8DE2303D2 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -214,16 +217,16 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = myTwitterTests;
-			productName = myTwitterTests;
-			productReference = 00E356EE1AD99517003FC87E /* myTwitterTests.xctest */;
+			name = reactNativeTwitterTests;
+			productName = reactNativeTwitterTests;
+			productReference = 00E356EE1AD99517003FC87E /* reactNativeTwitterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* myTwitter */ = {
+		13B07F861A680F5B00A75B9A /* reactNativeTwitter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "myTwitter" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "reactNativeTwitter" */;
 			buildPhases = (
-				6E29B94CD46C15AA666CD03A /* [CP] Check Pods Manifest.lock */,
+				2A7DB59E7BF30F7FC8C6C21F /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
@@ -234,16 +237,16 @@
 			);
 			dependencies = (
 			);
-			name = myTwitter;
-			productName = myTwitter;
-			productReference = 13B07F961A680F5B00A75B9A /* myTwitter.app */;
+			name = reactNativeTwitter;
+			productName = reactNativeTwitter;
+			productReference = 13B07F961A680F5B00A75B9A /* reactNativeTwitter.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* myTwitter-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* reactNativeTwitter-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "myTwitter-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "reactNativeTwitter-tvOS" */;
 			buildPhases = (
-				B21E1D90589B44AC07093778 /* [CP] Check Pods Manifest.lock */,
+				35FF38F209F906A43DF2EDC9 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -254,16 +257,16 @@
 			);
 			dependencies = (
 			);
-			name = "myTwitter-tvOS";
-			productName = "myTwitter-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* myTwitter-tvOS.app */;
+			name = "reactNativeTwitter-tvOS";
+			productName = "reactNativeTwitter-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* reactNativeTwitter-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* myTwitter-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* reactNativeTwitter-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "myTwitter-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "reactNativeTwitter-tvOSTests" */;
 			buildPhases = (
-				6EC40D9FA970D42CC60DA0CD /* [CP] Check Pods Manifest.lock */,
+				C50293798658CA1AE2D01E76 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -273,9 +276,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "myTwitter-tvOSTests";
-			productName = "myTwitter-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* myTwitter-tvOSTests.xctest */;
+			name = "reactNativeTwitter-tvOSTests";
+			productName = "reactNativeTwitter-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* reactNativeTwitter-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -284,7 +287,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -302,11 +305,12 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "myTwitter" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "reactNativeTwitter" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = en;
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -315,10 +319,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* myTwitter */,
-				00E356ED1AD99517003FC87E /* myTwitterTests */,
-				2D02E47A1E0B4A5D006451C7 /* myTwitter-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* myTwitter-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* reactNativeTwitter */,
+				00E356ED1AD99517003FC87E /* reactNativeTwitterTests */,
+				2D02E47A1E0B4A5D006451C7 /* reactNativeTwitter-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* reactNativeTwitter-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -335,6 +339,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				941DF6112332202900B6CEDD /* ios in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
@@ -372,6 +377,28 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		2A7DB59E7BF30F7FC8C6C21F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-reactNativeTwitter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -386,7 +413,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		3F0BD0254B9402257057A40D /* [CP] Check Pods Manifest.lock */ = {
+		35FF38F209F906A43DF2EDC9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -401,14 +428,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-myTwitterTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-reactNativeTwitter-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6E29B94CD46C15AA666CD03A /* [CP] Check Pods Manifest.lock */ = {
+		C50293798658CA1AE2D01E76 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -423,14 +450,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-myTwitter-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-reactNativeTwitter-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6EC40D9FA970D42CC60DA0CD /* [CP] Check Pods Manifest.lock */ = {
+		EE7300ED20B008C8DE2303D2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -445,29 +472,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-myTwitter-tvOSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B21E1D90589B44AC07093778 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-myTwitter-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-reactNativeTwitterTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -519,7 +524,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* myTwitterTests.m in Sources */,
+				00E356F31AD99517003FC87E /* reactNativeTwitterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,7 +550,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* myTwitterTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* reactNativeTwitterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,12 +559,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* myTwitter */;
+			target = 13B07F861A680F5B00A75B9A /* reactNativeTwitter */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* myTwitter-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* reactNativeTwitter-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -571,7 +576,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = myTwitter;
+			path = reactNativeTwitter;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -579,14 +584,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E186B0D5E916B81D8D338D0 /* Pods-myTwitterTests.debug.xcconfig */;
+			baseConfigurationReference = 5DFCD0845CD0D313A063D08B /* Pods-reactNativeTwitterTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = myTwitterTests/Info.plist;
+				INFOPLIST_FILE = reactNativeTwitterTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -596,17 +601,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/myTwitter.app/myTwitter";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/reactNativeTwitter.app/reactNativeTwitter";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01CF223B6B6D283FA252712F /* Pods-myTwitterTests.release.xcconfig */;
+			baseConfigurationReference = 056C8E6798EA7B30A9E2BC23 /* Pods-reactNativeTwitterTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = myTwitterTests/Info.plist;
+				INFOPLIST_FILE = reactNativeTwitterTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -616,18 +621,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/myTwitter.app/myTwitter";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/reactNativeTwitter.app/reactNativeTwitter";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A085E4FD2613639779B25B9F /* Pods-myTwitter.debug.xcconfig */;
+			baseConfigurationReference = 913FADFCF254A5F92B2AFEE8 /* Pods-reactNativeTwitter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				INFOPLIST_FILE = myTwitter/Info.plist;
+				INFOPLIST_FILE = reactNativeTwitter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -635,18 +640,18 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = myTwitter;
+				PRODUCT_NAME = reactNativeTwitter;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78F232FEB5AD6E9F6FFA142A /* Pods-myTwitter.release.xcconfig */;
+			baseConfigurationReference = 221EFC7F9CBC3421E9414E5C /* Pods-reactNativeTwitter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = myTwitter/Info.plist;
+				INFOPLIST_FILE = reactNativeTwitter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -654,14 +659,14 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = myTwitter;
+				PRODUCT_NAME = reactNativeTwitter;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16FCC00312A9005A3974A1A2 /* Pods-myTwitter-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 8E7B2C3E314A8054FF7443F1 /* Pods-reactNativeTwitter-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -672,14 +677,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "myTwitter-tvOS/Info.plist";
+				INFOPLIST_FILE = "reactNativeTwitter-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.myTwitter-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.reactNativeTwitter-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -689,7 +694,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7655DF9E3F9F1FBF211CE9B5 /* Pods-myTwitter-tvOS.release.xcconfig */;
+			baseConfigurationReference = 63709619575EDE793CCC59F7 /* Pods-reactNativeTwitter-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -700,14 +705,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "myTwitter-tvOS/Info.plist";
+				INFOPLIST_FILE = "reactNativeTwitter-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.myTwitter-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.reactNativeTwitter-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -717,7 +722,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C36053AE76AEF146353384A2 /* Pods-myTwitter-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 25D274E0D3FD744E4755382E /* Pods-reactNativeTwitter-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -727,24 +732,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "myTwitter-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "reactNativeTwitter-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.myTwitter-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.reactNativeTwitter-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/myTwitter-tvOS.app/myTwitter-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/reactNativeTwitter-tvOS.app/reactNativeTwitter-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 308D05211211045DEA3D67F8 /* Pods-myTwitter-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 8C1F837875DE7BEA787087FC /* Pods-reactNativeTwitter-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -754,17 +759,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "myTwitter-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "reactNativeTwitter-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.myTwitter-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.reactNativeTwitter-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/myTwitter-tvOS.app/myTwitter-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/reactNativeTwitter-tvOS.app/reactNativeTwitter-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -773,7 +778,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -827,7 +831,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -873,7 +876,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "myTwitterTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "reactNativeTwitterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -882,7 +885,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "myTwitter" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "reactNativeTwitter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -891,7 +894,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "myTwitter-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "reactNativeTwitter-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -900,7 +903,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "myTwitter-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "reactNativeTwitter-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -909,7 +912,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "myTwitter" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "reactNativeTwitter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
