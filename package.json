@@ -53,7 +53,7 @@
     "@types/react-test-renderer": "^16.9.0",
     "@types/redux-logger": "^3.0.7",
     "@types/styled-components": "^4.1.19",
-    "babel-jest": "24.9.0",
+    "babel-jest": "25.2.0",
     "babel-plugin-import": "^1.12.1",
     "babel-plugin-module-resolver": "^4.0.0",
     "dotenv": "^8.1.0",
