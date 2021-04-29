@@ -1,0 +1,62 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  reviewers:
+  - macisi
+  assignees:
+  - macisi
+  ignore:
+  - dependency-name: react-native-webview
+    versions:
+    - 11.2.1
+    - 11.2.3
+    - 11.2.4
+    - 11.3.1
+    - 11.3.2
+    - 11.4.0
+    - 11.4.2
+  - dependency-name: react-native-reanimated
+    versions:
+    - 1.13.2
+    - 2.0.0
+    - 2.0.1
+  - dependency-name: "@types/ramda"
+    versions:
+    - 0.27.36
+    - 0.27.37
+    - 0.27.38
+    - 0.27.39
+  - dependency-name: "@babel/plugin-transform-runtime"
+    versions:
+    - 7.12.10
+    - 7.12.13
+    - 7.12.15
+    - 7.12.17
+    - 7.13.10
+    - 7.13.2
+    - 7.13.6
+    - 7.13.7
+    - 7.13.8
+    - 7.13.9
+  - dependency-name: "@types/react"
+    versions:
+    - 17.0.0
+    - 17.0.1
+    - 17.0.2
+    - 17.0.3
+  - dependency-name: react-native-gesture-handler
+    versions:
+    - 1.10.0
+    - 1.10.1
+    - 1.10.2
+    - 1.9.0
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: handlebars
+    versions:
+    - 4.7.6
